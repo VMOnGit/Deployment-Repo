@@ -33,4 +33,4 @@ st.text('')
 st.text('')
 st.markdown(
     '`Create by` [Sidharth V Menon](https://github.com/VMOnGit/VMOnGit.git) | \
-         `Code:` [GitHub](https://github.com/intel-unnati-saintgits/Model-Deployment-Demo/edit/main/app.py)')
+         `Code:` [GitHub](https://github.com/VMOnGit/Deployment-Repo.git)')
