@@ -3,6 +3,6 @@
 - Contains ```app.py,model.py,prediction.py, requirements.txt for using the working of the app```
 - The required libraries are
 - <a href = 'https://joblib.readthedocs.io/en/stable/'>joblib==1.3.2</a>
-- streamlit==1.31.1
-- scikit-learn==1.2.2
+- <a href = 'https://docs.streamlit.io/'>streamlit==1.31.1</a>
+- <a href = 'https://scikit-learn.org/stable/index.html'>scikit-learn==1.2.2</a>
 - pandas==2.0.0
