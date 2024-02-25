@@ -23,7 +23,7 @@ result_container = st.empty()
 with st.spinner("Creating map... (may take up to a minute)"):
     
     try:
-        aoi = get_aoi(coordinates = [9.505941623973825, 76.54946128618556], radius=1100, rectangular=True)
+        aoi = get_aoi(coordinates = [9.505941623973825, 76.54946128618556], radius=1100, rectangular=False)
     except GeoCodingError as e:
         st.error(f"ERROR: {str(e)}")
         st.stop()
@@ -41,7 +41,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
         "shape": "circle",
         "contour_width": 12,
         "contour_color": '#FAF9F6',
-        "bg_shape": 'rectangle',
+        "bg_shape": 'circle',
         "bg_buffer": 2,
         "bg_color": '#FAF9F6',
     }
@@ -66,13 +66,4 @@ with st.spinner("Creating map... (may take up to a minute)"):
 st.markdown("</br>", unsafe_allow_html=True)
 st.markdown("</br>", unsafe_allow_html=True)
 ex1, ex2 = st.columns(2)
-
-with ex1.expander("Export geometries as GeoJSON"):
-    st.write(f"{df.shape[0]} geometries")
-    st.download_button(
-        label="Download",
-        data=gdf_to_bytesio_geojson(df),
-        file_name=f"prettymapp_{address[:10]}.geojson",
-        mime="application/geo+json",
-    )
 
