@@ -13,7 +13,12 @@ from utils import (
 )
 from prettymapp.geo import GeoCodingError, get_aoi
 from prettymapp.settings import STYLES
-
+shape_options = ["circle", "rectangle"]
+shape = col1style.radio(
+    "Map Shape",
+    options=shape_options,
+    key="shape",
+)
 st.set_page_config(
     page_title="prettymapp", page_icon="🖼️", initial_sidebar_state="collapsed"
 )
