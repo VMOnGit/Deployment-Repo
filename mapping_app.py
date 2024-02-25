@@ -13,6 +13,8 @@ from utils import (
 )
 from prettymapp.geo import GeoCodingError, get_aoi
 from prettymapp.settings import STYLES
+expander = form.expander("Customize map style")
+col1style, col2style, _, col3style = expander.columns([2, 2, 0.1, 1])
 shape_options = ["circle", "rectangle"]
 shape = col1style.radio(
     "Map Shape",
