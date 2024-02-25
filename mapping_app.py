@@ -18,7 +18,7 @@ st.set_page_config(
     page_title="prettymapp", page_icon="🖼️", initial_sidebar_state="collapsed"
 )
 st.markdown("# Prettymapp")
-draw_settings = copy.deepcopy(STYLES["Peach"])
+draw_settings = STYLES["Peach"]
 result_container = st.empty()
 with st.spinner("Creating map... (may take up to a minute)"):
     
