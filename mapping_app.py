@@ -13,14 +13,7 @@ from utils import (
 )
 from prettymapp.geo import GeoCodingError, get_aoi
 from prettymapp.settings import STYLES
-expander = st.form.expander("Customize map style")
-col1style, col2style, _, col3style = expander.columns([2, 2, 0.1, 1])
-shape_options = ["circle", "rectangle"]
-shape = col1style.radio(
-    "Map Shape",
-    options=shape_options,
-    key="shape",
-)
+
 st.set_page_config(
     page_title="prettymapp", page_icon="🖼️", initial_sidebar_state="collapsed"
 )
@@ -28,7 +21,7 @@ st.markdown("# Prettymapp")
 
 result_container = st.empty()
 with st.spinner("Creating map... (may take up to a minute)"):
-    rectangular = shape != "circle"
+    
     try:
         aoi = get_aoi(coordinates = [9.505941623973825, 76.54946128618556], radius=radius, rectangular=rectangular)
     except GeoCodingError as e:
@@ -45,7 +38,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
         "text_x": text_x,
         "text_y": text_y,
         "text_rotation": text_rotation,
-        "shape": shape,
+        "shape": "circle",
         "contour_width": contour_width,
         "contour_color": contour_color,
         "bg_shape": bg_shape,
