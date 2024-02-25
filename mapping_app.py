@@ -7,8 +7,8 @@ import streamlit as st
 url = "IP-ADRESS-URL-OF-ESP-SERVER"  # ESP's url, ex: https://192.168.102/ (Esp serial prints it when connected to wifi)
 
 
-while True:
-	get_data()
+#while True:
+	#get_data()
 aoi = get_aoi(coordinates = [9.505941623973825, 76.54946128618556], radius=1100, rectangular=False)
 df = get_osm_geometries(aoi=aoi)
 
