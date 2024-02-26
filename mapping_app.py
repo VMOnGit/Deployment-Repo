@@ -18,7 +18,7 @@ st.set_page_config(
     page_title="Current Location", page_icon="🖼️", initial_sidebar_state="collapsed"
 )
 st.markdown("# Current Location")
-draw_settings = STYLES["Peach"]
+draw_settings = STYLES["Auburn"]
 result_container = st.empty()
 with st.spinner("Creating map... (may take up to a minute)"):
     
