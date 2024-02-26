@@ -23,7 +23,7 @@ result_container = st.empty()
 with st.spinner("Creating map... (may take up to a minute)"):
     
     try:
-        aoi = get_aoi(coordinates = [9.505941623973825, 76.54946128618556], radius=1100, rectangular=False)
+        aoi = get_aoi(coordinates = [9.505941623973825, 76.54946128618556], radius=110, rectangular=False)
     except GeoCodingError as e:
         st.error(f"ERROR: {str(e)}")
         st.stop()
@@ -34,7 +34,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
         "name_on": "my_map",
         "name": "my_map1",
         "font_size": 8,
-        "font_color": 'white',
+        "font_color": 'blue',
         "text_x": 0,
         "text_y": 0,
         "text_rotation": 0,
