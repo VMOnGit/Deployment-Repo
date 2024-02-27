@@ -31,9 +31,9 @@ with st.spinner("Creating map... (may take up to a minute)"):
     config = {
         "aoi_bounds": aoi.bounds,
         "draw_settings": draw_settings,
-        "name_on": "my_map",
+        "name_on": "my location",
         "name": "my_map1",
-        "font_size": 18,
+        "font_size": 24,
         "font_color": 'blue',
         "text_x": 0,
         "text_y": 0,
