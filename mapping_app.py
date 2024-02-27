@@ -34,7 +34,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
         "name_on": "my location",
         "name": "my_map1",
         "font_size": 24,
-        "font_color": 'blue',
+        "font_color": '#2596be',
         "text_x": 0,
         "text_y": 0,
         "text_rotation": 0,
