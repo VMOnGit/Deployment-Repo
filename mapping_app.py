@@ -18,7 +18,7 @@ st.set_page_config(
     page_title="Current Location", page_icon="🖼️", initial_sidebar_state="collapsed"
 )
 st.markdown("# Current Location")
-draw_settings = STYLES["Auburn"]
+draw_settings = STYLES["Peach"]
 result_container = st.empty()
 with st.spinner("Creating map... (may take up to a minute)"):
     
@@ -32,7 +32,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
         "aoi_bounds": aoi.bounds,
         "draw_settings": draw_settings,
         "name_on": "my location",
-        "name": "my_map1",
+        "name": "my location",
         "font_size": 24,
         "font_color": '#2596be',
         "text_x": 0,
